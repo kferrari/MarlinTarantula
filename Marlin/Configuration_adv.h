@@ -1127,13 +1127,13 @@
   #define HOLD_MULTIPLIER    0.5  // Scales down the holding current from run current
   #define INTERPOLATE       true  // Interpolate X/Y/Z_MICROSTEPS to 256
 
-  #define X_CURRENT          1000  // rms current in mA. Multiply by 1.41 for peak current.
+  #define X_CURRENT          800  // rms current in mA. Multiply by 1.41 for peak current.
   #define X_MICROSTEPS        16  // 0..256
 
-  #define Y_CURRENT          1000
+  #define Y_CURRENT          800
   #define Y_MICROSTEPS        16
 
-  #define Z_CURRENT          1000
+  #define Z_CURRENT          800
   #define Z_MICROSTEPS        16
 
   #define X2_CURRENT         800
@@ -1227,11 +1227,11 @@
    * It is advised to set X/Y/Z_HOME_BUMP_MM to 0.
    * M914 X/Y/Z to live tune the setting
    */
-  //#define SENSORLESS_HOMING // TMC2130 only
+  #define SENSORLESS_HOMING // TMC2130 only
 
   #if ENABLED(SENSORLESS_HOMING)
-    #define X_HOMING_SENSITIVITY  8
-    #define Y_HOMING_SENSITIVITY  8
+    #define X_HOMING_SENSITIVITY  12
+    #define Y_HOMING_SENSITIVITY  12
     #define Z_HOMING_SENSITIVITY  8
   #endif
 
