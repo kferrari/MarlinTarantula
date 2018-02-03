@@ -101,7 +101,7 @@
  * Use only one of Left/Right and Front/Behind. Others must be 0 (zero)
  * If you have a dual nozzle the offsets are calculated from the primary nozzle (the one plugged in to E0)
  */
-#define SENSOR_LEFT        0
+#define SENSOR_LEFT        1
 #define SENSOR_RIGHT       0
 #define SENSOR_FRONT       0
 #define SENSOR_BEHIND      71
@@ -794,8 +794,8 @@
   //#define ENDSTOPPULLUP_XMAX
   //#define ENDSTOPPULLUP_YMAX
   //#define ENDSTOPPULLUP_ZMAX
-  #define ENDSTOPPULLUP_XMIN
-  #define ENDSTOPPULLUP_YMIN
+  //#define ENDSTOPPULLUP_XMIN
+  //#define ENDSTOPPULLUP_YMIN
   #if ENABLED(BLTOUCH) || ENABLED(SN04) || ENABLED(INDUCTIVE_NC) || ENABLED(INDUCTIVE_NO)
     //#define ENDSTOPPULLUP_ZMIN
     #define ENDSTOPPULLUP_ZMIN_PROBE
@@ -806,8 +806,8 @@
 #endif
 
 // Mechanical endstop with COM to ground and NC to Signal uses "false" here (most common setup).
-#define X_MIN_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
-#define Y_MIN_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
+#define X_MIN_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
+#define Y_MIN_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
 #if ENABLED(BLTOUCH)
   #define Z_MIN_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
 #elif ENABLED(INDUCTIVE_NC)
@@ -1885,7 +1885,7 @@
 //
 // Add individual axis homing items (Home X, Home Y, and Home Z) to the LCD menu.
 //
-#define INDIVIDUAL_AXIS_HOMING_MENU
+//#define INDIVIDUAL_AXIS_HOMING_MENU
 
 //
 // SPEAKER/BUZZER

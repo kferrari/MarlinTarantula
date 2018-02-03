@@ -116,7 +116,7 @@
   #define Y_DIR_PIN          61
   #define Y_ENABLE_PIN       56
   #ifndef Y_CS_PIN
-  #define Y_CS_PIN         49
+    #define Y_CS_PIN         44
   #endif
 #endif
 
@@ -152,6 +152,7 @@
   #endif
 #endif
 
+<<<<<<< HEAD
 #if DISABLED(X_AXIS_USE_E1) && DISABLED(Y_AXIS_USE_E1) && DISABLED(Z_AXIS_USE_E1) && DISABLED(EXTRUDER_USE_E1)
   #define E1_STEP_PIN        36
   #define E1_DIR_PIN         34
@@ -160,6 +161,12 @@
   #define E1_CS_PIN        44
   #endif
 #endif
+=======
+#define E1_STEP_PIN        36
+#define E1_DIR_PIN         34
+#define E1_ENABLE_PIN      30
+#define E1_CS_PIN          49
+>>>>>>> Sensorless homing & BLTouch
 
 /**
  * Default pins for TMC software SPI
