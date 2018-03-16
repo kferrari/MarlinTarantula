@@ -152,21 +152,14 @@
   #endif
 #endif
 
-<<<<<<< HEAD
 #if DISABLED(X_AXIS_USE_E1) && DISABLED(Y_AXIS_USE_E1) && DISABLED(Z_AXIS_USE_E1) && DISABLED(EXTRUDER_USE_E1)
   #define E1_STEP_PIN        36
   #define E1_DIR_PIN         34
   #define E1_ENABLE_PIN      30
   #ifndef E1_CS_PIN
-  #define E1_CS_PIN        44
+  #define E1_CS_PIN        49
   #endif
 #endif
-=======
-#define E1_STEP_PIN        36
-#define E1_DIR_PIN         34
-#define E1_ENABLE_PIN      30
-#define E1_CS_PIN          49
->>>>>>> Sensorless homing & BLTouch
 
 /**
  * Default pins for TMC software SPI
@@ -277,7 +270,11 @@
   #define RAMPS_D9_PIN      9
 #endif
 #ifndef RAMPS_D10_PIN
+<<<<<<< HEAD
   #define RAMPS_D10_PIN    10
+=======
+  #define RAMPS_D10_PIN 7
+>>>>>>> switch hotend pin
 #endif
 
 #if ENABLED(HOTEND_USE_E1)
