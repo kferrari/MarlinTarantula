@@ -54,7 +54,7 @@
 //#define CHANGE_Y_DIRECTION      // If your bed homes in the wrong direction (it should move front to back) enable this.
 //#define CHANGE_X_DIRECTION      // If your X carriage homes in the wrong direction (it should move right to left) enable this.
 #define CHANGE_Z_DIRECTION      // If your Z homes in the wrong direction (it should move top to bottom) enable this.
-//#define HOTEND_E3DV6            // Genuine E3D v6 hotend.
+#define HOTEND_E3DV6            // Genuine E3D v6 hotend.
 //#define FULL_GRAPHIC_SMART      // Enable this if you have a RepRap Discount Full Graphic Smart Controller (The
                                   // stock controller is a RepRap Discount Smart Controller)
 //#define Z_DUAL_STEPPER_DRIVERS  // Enable this if you have dual Z stepper motors with the second stepper motor
@@ -113,9 +113,9 @@
  * If you have a dual nozzle the offsets are calculated from the primary nozzle (the one plugged in to E0)
  */
 #define SENSOR_LEFT        0
-#define SENSOR_RIGHT       0
-#define SENSOR_FRONT       0
-#define SENSOR_BEHIND      20
+#define SENSOR_RIGHT       39
+#define SENSOR_FRONT       42
+#define SENSOR_BEHIND      0
 
 /**
  * Number of grid points in each direction
@@ -161,9 +161,9 @@
 /**
  * TEVO Tarantula Custom PID Settings - Kim's Genuine E3D V6
  */
-#define  hot_Kp 13.83
-#define  hot_Ki 0.70
-#define  hot_Kd 67.97
+#define  hot_Kp 23.24
+#define  hot_Ki 2.22
+#define  hot_Kd 60.93
 // FIND YOUR OWN: "M303 E0 C8 S200" to run autotune on the hotend at 200 degreesC for 8 cycles.
 // More info here: http://reprap.org/wiki/PID_Tuning
 
@@ -195,8 +195,8 @@
  *       CUSTOM_USER_MENUS for PETG to appear, along with PLA and ABS, under Custom Commands.
  *       PLA and ABS will appear under both Custom Command and Prepare.
  */
-#define Hot_PLA 		200
-#define Bed_PLA 		 65
+#define Hot_PLA 		205
+#define Bed_PLA 		 85
 
 #define Hot_ABS 		240
 #define Bed_ABS 		100
