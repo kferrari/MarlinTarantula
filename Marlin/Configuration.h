@@ -114,7 +114,7 @@
  */
 #define SENSOR_LEFT        0
 #define SENSOR_RIGHT       39
-#define SENSOR_FRONT       42
+#define SENSOR_FRONT       21
 #define SENSOR_BEHIND      0
 
 /**
@@ -159,11 +159,11 @@
 //#define CHANGE_E1_DIRECTION   // If your secondary extruder is going backwards, enable this.
 
 /**
- * TEVO Tarantula Custom PID Settings - Kim's Genuine E3D V6
+ * TEVO Tarantula Custom PID Settings - Kim's Genuine E3D V6 + Fang fan
  */
-#define  hot_Kp 23.24
-#define  hot_Ki 2.22
-#define  hot_Kd 60.93
+#define  hot_Kp 24.18
+#define  hot_Ki 2.19
+#define  hot_Kd 66.86
 // FIND YOUR OWN: "M303 E0 C8 S200" to run autotune on the hotend at 200 degreesC for 8 cycles.
 // More info here: http://reprap.org/wiki/PID_Tuning
 
