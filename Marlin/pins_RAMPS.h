@@ -116,7 +116,7 @@
   #define Y_DIR_PIN          61
   #define Y_ENABLE_PIN       56
   #ifndef Y_CS_PIN
-    #define Y_CS_PIN         44
+  #define Y_CS_PIN         44
   #endif
 #endif
 
@@ -270,11 +270,7 @@
   #define RAMPS_D9_PIN      9
 #endif
 #ifndef RAMPS_D10_PIN
-<<<<<<< HEAD
-  #define RAMPS_D10_PIN    10
-=======
   #define RAMPS_D10_PIN 7
->>>>>>> switch hotend pin
 #endif
 
 #if ENABLED(HOTEND_USE_E1)
@@ -327,7 +323,7 @@
 #define LED_PIN            13
 
 #ifndef FILWIDTH_PIN
-  #define FILWIDTH_PIN      -1   // Analog Input on AUX2
+  #define FILWIDTH_PIN      5   // Analog Input on AUX2
 #endif
 
 // define digital pin 4 for the filament runout sensor. Use the RAMPS 1.4 digital input 4 on the servos connector
@@ -336,7 +332,7 @@
 #endif
 
 #ifndef PS_ON_PIN
-  #define PS_ON_PIN        5
+  #define PS_ON_PIN        12
 #endif
 
 #if ENABLED(CASE_LIGHT_ENABLE) && !defined(CASE_LIGHT_PIN) && !defined(SPINDLE_LASER_ENABLE_PIN)
